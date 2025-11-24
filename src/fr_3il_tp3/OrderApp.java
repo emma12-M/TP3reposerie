@@ -6,7 +6,7 @@ public class OrderApp {
 	/** 
 	* Calcule le montant TTC d'une commande à partir du prix HT et de la quantité. 
 	* 
-	* @param unitPrice prix unitaire hors taxe 
+	* @param priceHt prix unitaire hors taxe 
 	* @param quantity  nombre d'articles 
 	* @return montant TTC (TVA 20 % incluse) 
 	*/ 
