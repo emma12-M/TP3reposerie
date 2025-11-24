@@ -2,12 +2,14 @@ package fr_3il_tp3;
 
 public class OrderApp {
 
+	// calcul de la facture totale d'un client toute taxe comprise
 	public static double montant_tva(double priceHt,int quantity)
 	{
 		double total = priceHt * quantity * 1.2; 
 		return total;
 	}
 	
+	// affichage de la facture d'un client
 	public static void affichage(String CustomerName,double UnitPrice, int Quantity,double TotalWithVat)
 	{
 		System.out.println("Client : " + CustomerName);
@@ -34,6 +36,8 @@ public class OrderApp {
 		affichage(secondCustomerName, secondUnitPrice, secondQuantity,secondTotalWithVat);
 		double totalOrder = firstTotalWithVat + secondTotalWithVat; 
 
+		// réduction à appliquer
+		
 		if ( totalOrder> 30) {
 			
 			System.out.println("Réduction !");
