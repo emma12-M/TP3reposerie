@@ -32,14 +32,15 @@ public class OrderApp {
 		affichage(firstCustomerName, firstUnitPrice, firstQuantity, firstTotalWithVat);
 
 		affichage(secondCustomerName, secondUnitPrice, secondQuantity,secondTotalWithVat);
+		double totalOrder = firstTotalWithVat + secondTotalWithVat; 
 
-		if ( firstTotalWithVat +  secondTotalWithVat > 30) {
+		if ( totalOrder> 30) {
 			
 			System.out.println("Réduction !");
 			
 		} else {
 			
-			if ( firstTotalWithVat +  secondTotalWithVat > 20) {
+			if ( totalOrder > 20) {
 				
 				System.out.println("Petite réduction !");
 				
