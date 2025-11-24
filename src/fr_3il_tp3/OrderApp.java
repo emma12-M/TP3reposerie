@@ -3,6 +3,13 @@ package fr_3il_tp3;
 public class OrderApp {
 
 	// calcul de la facture totale d'un client toute taxe comprise
+	/** 
+	* Calcule le montant TTC d'une commande à partir du prix HT et de la quantité. 
+	* 
+	* @param unitPrice prix unitaire hors taxe 
+	* @param quantity  nombre d'articles 
+	* @return montant TTC (TVA 20 % incluse) 
+	*/ 
 	public static double montant_tva(double priceHt,int quantity)
 	{
 		double total = priceHt * quantity * 1.2; 
